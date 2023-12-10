@@ -30,7 +30,10 @@ echo "Installing in $tool_path"
 # an ld-classic, so use the standard linker.
 #
 # Need to keep a lookout for SDKs version > 15.
-cat >$tool_path/ld <<EOF
+#
+# We quote the EOF to avoid parameter substitution while writing the
+# document.
+cat >$tool_path/ld <<'EOF'
 #!/bin/sh
 
 classic=$(xcrun --find ld-classic 2>/dev/null) || true
