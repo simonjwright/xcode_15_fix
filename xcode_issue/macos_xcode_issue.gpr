@@ -1,0 +1,19 @@
+with "config/macos_xcode_issue_config.gpr";
+project Macos_Xcode_Issue is
+
+   for Source_Dirs use ("src/", "config/");
+   for Object_Dir use "obj/" & Macos_Xcode_Issue_Config.Build_Profile;
+   for Create_Missing_Dirs use "True";
+   for Exec_Dir use "bin";
+   for Main use ("c380003.adb", "c390002.adb", "c43206a.adb");
+
+   package Compiler is
+      for Default_Switches ("Ada") use
+        Macos_Xcode_Issue_Config.Ada_Compiler_Switches;
+   end Compiler;
+
+   package Binder is
+      for Default_Switches ("Ada") use ("-E");
+   end Binder;
+
+end Macos_Xcode_Issue;

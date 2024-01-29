@@ -1,0 +1,16 @@
+name = "macos_xcode_issue"
+description = "Provides examples of linking problems with Xcode 15"
+version = "0.1.0-dev"
+
+authors = ["Simon Wright"]
+maintainers = ["Simon Wright <simon@pushface.org>"]
+maintainers-logins = ["simonjwright"]
+licenses = "BSD-3-Clause"
+website = ""
+tags = ["macos", "issue", "reproducer"]
+
+executables = ["c380003", "c390002", "c43206a"]
+
+[[actions]]
+  type = "pre-build"
+  command = ["gnatchop", "-w", "src/*.a", "src/*.ada", "src"]
