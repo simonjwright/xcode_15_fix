@@ -45,3 +45,5 @@ jobs:
         alr run --skip-build c380003 || true
         alr run --skip-build c390002 || true
         alr run --skip-build c43206a || true
+        alr run --skip-build c83030a || true
+        alr run --skip-build c83030c || true
