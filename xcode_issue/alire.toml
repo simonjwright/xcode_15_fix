@@ -9,7 +9,7 @@ licenses = "BSD-3-Clause"
 website = ""
 tags = ["macos", "issue", "reproducer"]
 
-executables = ["c380003", "c390002", "c43206a"]
+executables = ["c380003", "c390002", "c43206a", "c83030a", "c83030c"]
 
 [[actions]]
   type = "pre-build"
