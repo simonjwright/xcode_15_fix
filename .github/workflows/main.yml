@@ -23,7 +23,7 @@ jobs:
       run: ld -v
     -
       name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     -
       name: Set up Alire
       uses: alire-project/setup-alire@v2
@@ -41,7 +41,7 @@ jobs:
       name: Build & run
       run: |
         cd xcode_issue
-        alr --non-interactive build
+        alr --non-interactive build --release
         alr run --skip-build c380003
         alr run --skip-build c390002
         alr run --skip-build c43206a
