@@ -1,9 +1,9 @@
-name: macos-checks
+name: macOS checks
 
 on: [push]
 
 jobs:
-alire-macos-13:
+  alire-macos-13:
     # This job runs with macOS 13 and the latest stable Xcode (v15),
     # which introduced the problem with ld-new (the default
     # implementation of ld) and ld-classic). The main effect seen with
