@@ -20,3 +20,12 @@ alr exec -- sh install-ld-shim.sh
 ```
 
 Note, depending on how your compiler was installed you may need to use `sudo`.
+
+To uninstall,
+```
+sh uninstall-ld-shim.sh
+```
+or, if you're running Alire,
+```
+alr exec -- sh uninstall-ld-shim.sh
+```
