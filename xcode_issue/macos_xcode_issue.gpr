@@ -9,7 +9,7 @@ project Macos_Xcode_Issue is
                  --  These three fail under x86_64 and aarch64
                  "c34007j.adb",
                  "c380003.adb",
-                 "c390002.adb"
+                 "c390002.adb",
                  --  These three only fail under aarch64
                  "c43206a.adb",
                  "c83030a.adb",
