@@ -9,15 +9,6 @@ licenses = "BSD-3-Clause"
 website = ""
 tags = ["macos", "issue", "reproducer"]
 
-executables = [
-   "c34007j",
-   "c380003",
-   "c390002",
-   "c43206a",
-   "c83030a",
-   "c83030c"
-  ]
-
 [[actions]]
   type = "post-fetch"
   command = ["gnatchop", "-w", "src/*.a", "src/*.ada", "src"]

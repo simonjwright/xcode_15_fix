@@ -42,15 +42,16 @@ jobs:
       run: |
         cd xcode_issue
         alr --non-interactive build --release
-        alr run --skip-build c34007j || true
-        alr run --skip-build c380003 || true
-        alr run --skip-build c390002 || true
-        alr run --skip-build c43206a || true
-        alr run --skip-build c83030a || true
-        alr run --skip-build c83030c || true
-        alr run --skip-build c94001c || true
-        alr run --skip-build c94010a || true
+        for b in bin/*; do $b; done
     -
-      name: What directory?
+      name: Apply code fix
       run: |
-        pwd
+        alr exec -- sh install-ld-shim.sh
+    -
+      name: Rerun, with fix
+      run: |
+        cd xcode_issue
+        rm bin/*
+        alr --non-interactive build --release
+        for b in bin/*; do $b; done
+

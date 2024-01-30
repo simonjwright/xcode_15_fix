@@ -6,9 +6,11 @@ project Macos_Xcode_Issue is
    for Create_Missing_Dirs use "True";
    for Exec_Dir use "bin";
    for Main use (
+                 --  These three fail under x86_64 and aarch64
                  "c34007j.adb",
                  "c380003.adb",
-                 "c390002.adb",
+                 "c390002.adb"
+                 --  These three only fail under aarch64
                  "c43206a.adb",
                  "c83030a.adb",
                  "c83030c.adb"

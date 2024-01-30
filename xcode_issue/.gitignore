@@ -1,7 +1,9 @@
 obj
 bin
 alire
+bin
 config
+obj
 
 # during development
-xcode_issue/acats
+acats
