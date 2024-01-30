@@ -42,7 +42,7 @@ jobs:
       run: |
         cd xcode_issue
         alr --non-interactive build --release
-        for b in bin/*; do $b; done
+        for b in bin/*; do $b || true; done
     -
       name: Apply code fix
       run: |
