@@ -46,6 +46,7 @@ jobs:
     -
       name: Apply code fix
       run: |
+        cd xcode_issue
         alr exec -- sh install-ld-shim.sh
     -
       name: Rerun, with fix
