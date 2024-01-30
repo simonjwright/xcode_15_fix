@@ -5,11 +5,16 @@ project Macos_Xcode_Issue is
    for Object_Dir use "obj/" & Macos_Xcode_Issue_Config.Build_Profile;
    for Create_Missing_Dirs use "True";
    for Exec_Dir use "bin";
-   for Main use ("c380003.adb",
+   for Main use (
+                 "c34007j.adb",
+                 "c380003.adb",
                  "c390002.adb",
                  "c43206a.adb",
                  "c83030a.adb",
-                 "c83030c.adb");
+                 "c83030c.adb",
+                 "c94001c.adb",
+                 "c94010a.adb"
+                );
 
    package Compiler is
       for Default_Switches ("Ada") use

@@ -38,12 +38,19 @@ jobs:
         alr --non-interactive toolchain --select gnat_native
         alr --non-interactive toolchain --select gprbuild
     -
-      name: Build & run
+      name: Build & run, showing errors
       run: |
         cd xcode_issue
         alr --non-interactive build --release
+        alr run --skip-build c34007j || true
         alr run --skip-build c380003 || true
         alr run --skip-build c390002 || true
         alr run --skip-build c43206a || true
         alr run --skip-build c83030a || true
         alr run --skip-build c83030c || true
+        alr run --skip-build c94001c || true
+        alr run --skip-build c94010a || true
+    -
+      name: What directory?
+      run: |
+        pwd
