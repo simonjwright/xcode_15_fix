@@ -11,9 +11,7 @@ project Macos_Xcode_Issue is
                  "c390002.adb",
                  "c43206a.adb",
                  "c83030a.adb",
-                 "c83030c.adb",
-                 "c94001c.adb",
-                 "c94010a.adb"
+                 "c83030c.adb"
                 );
 
    package Compiler is
