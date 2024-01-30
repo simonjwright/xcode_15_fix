@@ -29,3 +29,5 @@ or, if you're running Alire,
 ```
 alr exec -- sh uninstall-ld-shim.sh
 ```
+
+There's a demonstrator in the `xcode_issue/` directory.
